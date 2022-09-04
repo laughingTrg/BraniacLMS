@@ -34,9 +34,8 @@
 
           {% csrf_token %}
           <p>
-            <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username"
-              maxlength="150" class="textinput textInput form-control" required="" id="id_username"
-              placeholder="Username">
+            <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150"
+              class="textinput textInput form-control" required="" id="id_username" placeholder="Username">
           </p>
           <p>
             <input type="password" name="password" autocomplete="current-password"
@@ -60,7 +59,8 @@
         <p>
           <div class="btn-group btn-block" role="group">
             <a class="btn btn-primary" href="#" role="button"><i class="fab fa-vk"></i></a>
-            <a class="btn btn-primary" href="#" role="button"><i class="fab fa-github"></i></a>
+            <a class="btn btn-primary" href="{% url 'social:begin' 'github' %}" role="button"><i
+              class="fab fa-github"></i></a>
             <a class="btn btn-primary" href="#" role="button"><i class="fab fa-facebook"></i></a>
           </div>
         </p>
